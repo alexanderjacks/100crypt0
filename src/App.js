@@ -29,7 +29,7 @@ export default class App extends React.Component {
         <header className="App-header">
           <img src={logo} className="App-logo pulse" alt="logo" />
           <p>
-            Here's an API call that only works in Dev, breaks on <code>yarn build</code>
+            Stay immediately informed.
           </p>
           <a
             className="App-link"
