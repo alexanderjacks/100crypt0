@@ -14,7 +14,7 @@ Top 100 Crypto currencies. Via the [nomics API](https://forums.nomics.com/).
 - A 
 -- 104.198.14.52
 - NS
--- dns2.p04.nsone.net 
+-- dns2.p04.nsone.net
 -- dns1.p04.nsone.net 
 -- dns3.p04.nsone.net 
 -- dns4.p04.nsone.net
