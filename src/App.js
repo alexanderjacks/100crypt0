@@ -18,8 +18,12 @@ export default class App extends React.Component {
 
   render(){
     
-    axios.defaults.headers.get['crossdomain'] ='true';
-    axios.get("https://api.nomics.com/v1/prices?key=643698f1108812b938fe8a2d81983059&interval=1d,30d&quote-currency=USD")
+
+    axios.get("https://api.nomics.com/v1/prices?key=643698f1108812b938fe8a2d81983059&interval=1d,30d&quote-currency=USD", {
+      headers: {
+        AccessControlAllowOrigin: "top100crypto.info"
+      }
+    })
       .then(res => {
         const coins = res.data;
         this.setState({coins})
