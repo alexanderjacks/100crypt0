@@ -18,7 +18,7 @@ export default class App extends React.Component {
 
   render(){
     
-    axios.defaults.headers.post['Content-Type'] ='application/x-www-form-urlencoded';
+    axios.defaults.get['crossdomain'] ='true';
     axios.get("https://api.nomics.com/v1/prices?key=643698f1108812b938fe8a2d81983059&interval=1d,30d&quote-currency=USD")
       .then(res => {
         const coins = res.data;
@@ -30,7 +30,7 @@ export default class App extends React.Component {
         <header className="App-header">
           <img src={logo} className="App-logo pulse" alt="logo" />
           <p>
-            Stay immediately informed. Trust J4cks.
+            Trust J4cks. Avoid CORS.
           </p>
           <a
             className="App-link"
