@@ -1,6 +1,6 @@
 # for most SPAs w internal routing
 [[redirects]]
-  from = "/*"
+  from = "https://api.nomics.com"
   to = "/index.html"
   status = 200
 
