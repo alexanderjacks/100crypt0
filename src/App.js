@@ -15,7 +15,7 @@ export default class App extends React.Component {
   }
 
   render(){
-    axios.get("https://api.nomics.com/v1/prices?key=643698f1108812b938fe8a2d81983059&interval=1d,30d&quote-currency=USD", {
+    axios.get("https://api.nomics.com/v1/prices?key=643698f1108812b938fe8a2d81983059&interval=1d,7d&quote-currency=USD", {
       crossdomain: true
     })
       .then(res => {
@@ -27,9 +27,9 @@ export default class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo pulse" alt="logo" />
-          <h1>
-            Top 100 Crypto . info
-          </h1>
+          <h2>
+            Top100Crypto.info
+          </h2>
           <a
             className="App-link"
             href="https://j4cks.com"
